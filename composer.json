@@ -1,0 +1,42 @@
+{
+    "name": "vp/model",
+    "description": "Our core model things for the spoon starter template.",
+    "keywords": [
+        "vp",
+        "model"
+    ],
+    "homepage": "https://github.com/vp/model",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tim Joosten",
+            "email": "topairy@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vp\\Model\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vp\\Model\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
